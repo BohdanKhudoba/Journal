@@ -40,8 +40,8 @@
         </nav>
       </div>
       <div class="sign_buttons">
-        <a href="/" class="sign_in">Вхід</a>
-        <a href="/" class="sign_up">Реєстрація</a>
+        <a [routerLink]="['/login']" class="sign_in">Вхід</a>
+        <a [routerLink]="['/register']" class="sign_up">Реєстрація</a>
       </div>
     </header>
   </div>
@@ -49,7 +49,7 @@
   <section class="join_now">
     <div class="content">
       <span class="text">Сучасний Електронний Щоденник </span>
-      <a href="/">Доєднатись зараз</a>
+      <a [routerLink]="['/register']">Доєднатись зараз</a>
     </div>
   </section>
 

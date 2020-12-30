@@ -1,0 +1,35 @@
+<div class="wrapper">
+    <div class="content">
+        <div class="login_block">
+            <div class="login_header">
+                <span>Вхід на свою особисту сторінку</span>
+            </div>
+            <div class="login_text">
+                <span>Ведіть свій логін і пароль</span>
+            </div>
+            <div class="login_form">
+                <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+                    <span>Вхід</span>
+                    <div class="form_email">
+                        <input type="text" placeholder="email" formControlName="email">
+                    </div>
+                    <div class="form_password">
+                        <input type="text" placeholder="password" formControlName="password">
+                    </div>
+                    <div class="login_button">
+                        <button type="submit">Увійти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contact_with_us_block">
+            <div class="contact_text">
+                <span> Якщо у тебе виникли запитання та є будь які пропозиції для нас. Зв’яжись з нами</span>
+            </div>
+            <div class="contact_buttons">
+                <button>Логін</button>
+                <button>Зв'язатись</button>
+            </div>
+        </div>
+    </div>
+</div>
